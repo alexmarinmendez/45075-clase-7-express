@@ -12,8 +12,8 @@ const users = [
 
 app.listen(8080, () => console.log('Server Up'))
 
-app.get('/', (request, response) => {
-    response.send('Hola Mundo!')
+app.get('/', (req, res) => {
+    res.send('Hola Mundo!')
 })
 
 app.get('/user/:id/:gender', (request, response) => {
